@@ -51,6 +51,6 @@ generateTotal=()=>{
 calBtn.addEventListener('click', generateTotal)
 
 months=()=>{
-    month.innerText = slider.value + " months"
+    month.innerText = slider.value + " month/s"
 }
 slider.addEventListener('change',months)
