@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing</title>
+    <link rel="shortcut icon" href="IMG/logo/Asset 11.svg" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <main>
+        <!-- <div class="bg-main-img"></div> -->
+        <div class="container">
+        <nav class="row">
+            <a href="index.html" class="navbrand"><img class="logo" src="IMG/logo/Asset 11.svg" alt=""></a>
+            <div class="theme-switch">
+                <span>Day</span>
+                <input type="checkbox">
+                <span>Night</span>
+            </div>
+            <ul class="navbar">
+                
+                 <p class="fa fa-xmark">X</p>
+                <li class="nav-item">
+                    <a href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="Team.html">Team</a>
+                </li>
+                <li class="nav-item">
+                    <a href="pricing.html" class="active">Pricing</a>
+                </li>
+            </ul>
+            <!-- <i class="fa fa-bars fa-2x"></i> -->
+        </nav>
+        <div class="row hero-text">
+            <div class="col-4">
+                <h1>
+                    CALCULATE THE ASTIMATE FOR YOUR PRODUCT. 
+                </h1>
+                <button>
+                <a class="calBtn" href="#cal">Calculate</a>
+                </button>
+            </div>
+            <img src="/IMG/Asset 1.svg" alt="">
+        </div>
+    </div>
+    </main>
+    <section class="calculator">
+        <div class="container">
+             <div class="card" id="cal">
+                    <div class="point-of-access">
+                    <h1>Calculator</h1>
+                    <hr>
+                    </div>
+                    <form>
+                        <input min="0" type="number" placeholder="Number of Projects" class="NoPs">
+                        <br>
+                        <h3> Service Selection</h1>
+                        <div class="service-selection">
+                        <div class="type-of-project">
+                            <input  type="radio" name="service" value="mAD"
+                                   >
+                            <label for="mAP">Mobile App Development</label>
+                          </div>
+                          <div class="type-of-project">
+                            <input  type="radio" name="service" value="wAD"
+                                  >
+                            <label for="WAD">Web App Development</label>
+                          </div>
+                      
+                          <div class="type-of-project">
+                            <input required type="radio" name="service" value="TS"
+                                  >
+                            <label for="mAP">Consultation</label>
+                          </div>
+                        </div>
+                        <br>
+                        <div class="d-flex">
+                       <small>Project Duration</small>
+                       </div>
+                        <div class="d-flex">
+                        <span class="mx">0</span>
+                        <input type="range" value="0" min="0" max = "12" placeholder="Duration of Project">
+                        <span id="durationOfProject" class="mx">12 months</span>
+                        </div>
+                        <div class="d-flex">
+                            <input type="checkbox" id="onBoardingSupport">
+                            <label for="">Include OnBoarding and techinal Support</label>
+                            </div>
+                            <div class="d-flex">
+                    <small>Note:  per project Onboarding and technical support is 50000 euro</small>
+                    </div>
+                    <button>Calculate</button>
+                    <h3 class="total"></h3>
+                    </form>
+                </div>
+        </div>
+    </section>
+    <footer>
+        <p>All the © copyrights are resevered by dotTech || 2022</p>
+    </footer>
+    <script src="js/js.js"></script>
+    <script src="js/pricing.js"></script>
+</body>
+</html>

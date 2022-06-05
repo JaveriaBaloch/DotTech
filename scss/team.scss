@@ -1,0 +1,46 @@
+.team{
+    .team-members{
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 4rem;
+        .mx{
+            margin: 0 3rem;
+        }
+        .card{
+            width: 18rem;
+            height: 22rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 3rem auto;
+
+            align-self: center;
+            background: repeating-linear-gradient(45deg,rgb(255, 244, 141) 25%,rgb(169, 216, 254) 50%);
+            h2{
+                font-family: $heading_font;
+                margin: 0.5rem;
+            }
+            small{
+                color: gray;
+                font-family:  Arial, sans-serif;
+                font-weight: 900;
+                margin: 0.5rem;
+            }
+            p{
+            font-family: $para-font;
+            margin-top: 1rem;
+            text-align: center;
+            color: rgb(70, 68, 68);
+            width: 80%;
+            }
+            
+            img{
+                width: 150px;
+                height: 150px;
+                margin: 0 auto;
+                margin-top: -75px;
+                
+            }
+        }
+    }
+}

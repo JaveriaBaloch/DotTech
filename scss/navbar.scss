@@ -1,0 +1,104 @@
+main{
+    background:url("../IMG/homePage\ pics/main.png");
+    background-size: cover;
+    background-clip: padding-box;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    color: $white;
+    position: relative;
+    padding-bottom: 4rem;
+    nav{
+        margin: 0 auto;
+        font-family: $heading_font;
+        padding: 1rem ;
+    .navbrand{
+        width: fit-content;
+        .logo{
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin-left: 0;
+        }
+    }
+    .navbar{
+        width: 300px;
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        .fa-xmark{
+            font-size: 0;
+        }
+        li{
+            margin: 0 1rem;
+        }
+        a{
+            text-decoration: none;
+            color: $white;
+            transition: all 0.4s;
+            &:hover{
+                color: $yellow;
+                font-size: 1.5rem;
+            }
+        }
+        .active{
+            color: $yellow;
+            border-bottom: 2px solid yellow;
+        }
+    }
+    }
+  .row{
+      
+      .theme-switch{
+          display: flex;
+          align-items: center;
+          input{
+              cursor: pointer;
+              &[type="checkbox"]:checked{
+                  background: yellow;
+                  &::before{
+                      transform: translate(100%);
+                  }
+              }
+          &[type="checkbox"]{
+              -webkit-appearance: none;
+              -moz-appearance: none;
+              appearance: none;
+              width: 30px;
+              height: 15px;
+              background-color: #eee;
+              outline: none;
+              border-radius: 20px;
+              margin: 0 8px;
+              box-shadow: inset 0 0 10px rgba(0,0,0,0.4);
+                position: relative;
+                transition: all 1s;
+              &::before{
+                  content: '';
+                  width: 19px;
+                  height: 19px;
+                  background:$progressBarGradient;
+                  position: absolute;
+                  top: -1.6px;
+                  left: -1.6px;
+                  border-radius: 50%;
+                  transition: all 1s;
+              }
+          }
+        }
+      }
+      h1{
+          margin-bottom: 1rem;
+          font-size: 2.5rem;
+          text-align: left;
+      }
+      p{
+          font-family: $para-font;
+          width: 400px;
+          margin-bottom: 2rem;
+      }
+      img{
+          width: 500px;
+      }
+  }
+    
+}

@@ -1,0 +1,198 @@
+.services{
+    hr{
+        background: black;
+    }
+    .animate-surface{
+         perspective: 100vw;
+         margin: 3rem;
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+    }
+    .card-body{
+        margin: 1rem auto;
+        // border-radius: none !important; 
+        // overflow: hidden;
+        width: 17rem ;
+
+        position: relative;
+        .card-front {
+            border-radius: none !important; 
+            border: lightgrey 1px solid;
+             width: 17rem ;
+            box-shadow: none !important;
+            background: $white;
+            display: flex;
+            flex-direction: column;
+            transition: all 2s;
+            img{
+                width: 150px;
+                height: 150px;
+                align-self: center;
+            }
+         }
+         .card-back{
+            border-radius: none !important; 
+            border: lightgrey 1px solid;
+            box-shadow: none !important;
+            background: $white;
+            transform-origin: right;
+            transform: rotateY(90deg) translateX(0%);
+            transition: all 2s;
+            position: absolute;
+            width: 17rem ;
+            top: 0;
+            left: 0;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            font-family: $para-font;
+        }
+    &:hover{
+        .card-front {
+            transform-origin: right;
+            transform: rotateY(-90deg) translateX(-100%);
+        }
+        .card-back{
+            transform-origin: left;
+            transform: rotateY(0deg);
+        }
+    }
+    }
+}
+.skills{
+    background: url("../IMG/homePage\ pics/Asset 8.svg");
+    background-size: cover;
+    background-clip: padding-box;
+    background-repeat: no-repeat;
+    background-position: top;
+    color: $white;
+    position: relative;
+    padding-bottom: 0rem;
+    .container{
+       padding-top: 8rem;
+       .skill-img{
+        height: 400px;
+        width: 400px;
+    }
+    .skill-list{
+    font-family: $para-font;
+    font-weight: 900;
+    font-size: 20px;
+    color: orange;
+        .skill{
+            display: flex;
+            justify-content: space-between;
+            margin: 1.7rem auto;
+            width: 100%;
+            .progressBar{
+                width: 25rem;
+                height: 15px;
+                background: #fff;
+                margin: 0 0.7rem;
+                overflow: hidden;
+                box-shadow: inset 0 0 17px gray;
+                border-radius: 1rem;
+                .progress{
+                    background: $progressBarGradient;
+                    height: 15px;
+                }
+            }
+        }
+        
+
+    }
+       hr{
+        background: $white;
+    }
+    
+    }
+
+}
+.ending-svg{
+    background: url("../IMG/homePage\ pics/Asset 11.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    color: $white;
+    position: relative;
+    height: 8rem;
+
+}
+.contact-Us{
+    margin: 1rem;
+    hr{
+        background: black;
+    }
+    .card{
+        overflow: hidden;
+        padding: 0rem;
+        margin: 2rem auto;
+        border-radius: 1rem;
+        width: fit-content;
+        justify-content: space-around;
+        height: 100%;
+        background: url("../IMG/homePage\ pics/bg.jpeg");
+        .row{
+            height: 100%;
+        }
+        .point-of-access{
+            width: 35%;
+            color:#fff;
+            padding: 4rem ;
+            
+           ul{
+            display:flex;
+            flex-direction: column;
+           width: 100%;
+           margin: auto;
+           text-align: center;
+           height: 100%;
+           list-style: none;
+           align-self: center;
+           li{
+               display: flex;
+               text-align: left;
+               align-items: center;
+               margin: 1rem 0;
+               p{
+                   margin-left: 1rem;
+               }
+           }
+           }
+        }
+        form{
+           background: #fff;
+            width: 65%;
+            padding: 1.6rem;
+            input,textarea{
+                margin: 0.5rem 0;
+                font-size: 1rem;
+                width: 100%;
+                font-family: $para-font;
+                padding: 8px;
+                outline: none;
+                border: 1px solid lightgray;
+                border-radius: 0.3rem;
+                box-shadow:inset 0 0 3px gray;
+            }
+            button{
+                width: 100%;
+                &::before{
+                       transform: translateX(-100%) translateY(-20%) rotate(0deg);
+
+                }
+                &:hover{
+                    transform: rotate(0deg);
+                    &::before{
+          
+                    transform: translateX(100%);
+                    }
+                }
+            }
+        }
+    
+    }
+}

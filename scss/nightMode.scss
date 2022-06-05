@@ -1,0 +1,31 @@
+.black{
+    background: linear-gradient(45deg,rgb(0, 0, 0),rgb(16, 76, 160));
+        .services ,.contact-Us, .calculator{
+            form{
+                background: linear-gradient(45deg,black,navy );
+                color: #fff;
+            }
+            .card-body,.card-front,.card-back{
+                background: linear-gradient(45deg,black,navy );
+                h3,p{
+                    color: #fff;
+                }
+
+            }
+            h1{
+                color: $white;
+            }
+            hr{
+                background: #fff;
+            }
+            .team-members{
+                .card{
+                    background: repeating-linear-gradient(45deg,black 20%,navy 50%);
+                    h2,p{
+                        color: #fff;
+                    }
+
+                }
+            }
+        }
+}
